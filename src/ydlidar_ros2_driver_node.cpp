@@ -146,7 +146,7 @@ int main(int argc, char *argv[]) {
   laser.setlidaropt(LidarPropScanFrequency, &f_optvalue, sizeof(float));
 
   bool invalid_range_is_inf = false;
-  node->declare_parameter<float>("invalid_range_is_inf");
+  node->declare_parameter<bool>("invalid_range_is_inf");
   node->get_parameter("invalid_range_is_inf", invalid_range_is_inf);
 
 
